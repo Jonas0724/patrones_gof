@@ -1,6 +1,7 @@
 import unittest
 from patrones.builder import EjercicioBuilder
 
+
 class TestBuilder(unittest.TestCase):
 
     def test_builder(self):
@@ -16,3 +17,7 @@ class TestBuilder(unittest.TestCase):
         self.assertEqual(ejercicio.nombre, "Sentadillas")
         self.assertEqual(ejercicio.tipo, "Fuerza")
         self.assertEqual(ejercicio.duracion, 30)
+
+
+if __name__ == "__main__":
+    unittest.main()
