@@ -1,4 +1,4 @@
-class ConexionJSON:
+class Conexion:
     _instancia = None
 
     def __new__(cls):

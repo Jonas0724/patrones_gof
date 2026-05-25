@@ -1,10 +1,7 @@
-class Ejercicio:
+class Cardio:
     pass
 
-class Cardio(Ejercicio):
-    pass
-
-class Fuerza(Ejercicio):
+class Fuerza:
     pass
 
 class EjercicioFactory:
@@ -14,5 +11,4 @@ class EjercicioFactory:
         if tipo == "cardio":
             return Cardio()
 
-        if tipo == "fuerza":
-            return Fuerza()
+        return Fuerza()
