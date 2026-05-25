@@ -1,5 +1,6 @@
 import unittest
-from patrones.decorator import *
+from patrones.decorator import EjercicioBase, ConCalorias
+
 
 class TestDecorator(unittest.TestCase):
 
@@ -10,3 +11,7 @@ class TestDecorator(unittest.TestCase):
         decorado = ConCalorias(ejercicio)
 
         self.assertIn("calorías", decorado.descripcion())
+
+
+if __name__ == "__main__":
+    unittest.main()

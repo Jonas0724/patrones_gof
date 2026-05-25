@@ -4,10 +4,16 @@ class EjercicioBase:
         return "Ejercicio básico"
 
 
-class ConCalorias:
+class DecoradorEjercicio:
 
     def __init__(self, ejercicio):
         self.ejercicio = ejercicio
 
     def descripcion(self):
-        return self.ejercicio.descripcion() + " + calorías"
+        return self.ejercicio.descripcion()
+
+
+class ConCalorias(DecoradorEjercicio):
+
+    def descripcion(self):
+        return super().descripcion() + " + calorías"

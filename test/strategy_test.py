@@ -1,5 +1,6 @@
 import unittest
-from patrones.strategy import *
+from patrones.strategy import CalculoCardio, CalculoFuerza
+
 
 class TestStrategy(unittest.TestCase):
 
@@ -18,3 +19,7 @@ class TestStrategy(unittest.TestCase):
         resultado = estrategia.calcular(10)
 
         self.assertEqual(resultado, 50)
+
+
+if __name__ == "__main__":
+    unittest.main()

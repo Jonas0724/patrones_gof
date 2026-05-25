@@ -1,5 +1,9 @@
-class EstrategiaCalculo:
+from abc import ABC, abstractmethod
 
+
+class EstrategiaCalculo(ABC):
+
+    @abstractmethod
     def calcular(self, valor):
         pass
 
